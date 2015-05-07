@@ -1,4 +1,4 @@
-#COINS - Bytelandian gold coins
+COINS - Bytelandian gold coins
 
-# Manuel Gutiérrez Pineda
+Manuel Gutiérrez Pineda
 @magupisoft
