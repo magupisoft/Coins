@@ -6,3 +6,9 @@ class String
 		/\A[-+]?\d+\z/ === self
 	end
 end
+
+class Integer
+	def is_i?
+		self.to_i.integer?
+	end
+end

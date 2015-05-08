@@ -10,9 +10,14 @@ module Coins
 		
 		def to_usd(denominations)	
 			
-			valid_coins = sanatize(denominations).map{ |d| Integer(d) }
-			
+			valid_coins = []
 			converted_coins = []
+			
+			if denominations.kind_of?(Array)
+				valid_coins = sanatize(denominations).map{ |d| Integer(d) } 
+			else
+				valid_coins << denominations.to_i
+			end
 			
 			if valid_coins.any?
 				puts "Input: (valid coins)" , valid_coins

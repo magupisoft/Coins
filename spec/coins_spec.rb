@@ -51,11 +51,20 @@ describe "Coins" do
 		it "should convert 0 golden coins into 0 USD dollars"  do
 			@convert_coins.to_usd(ARGV << '0').include?(0).should be_true
 		end
-		
-		
+				
 		it "should include just valid integer denominations"  do
 		  argv = %w(0 1 2 QWERTY)
 			@convert_coins.to_usd(argv).all? { |i| (0..2).include?(i) }
+		end
+		
+		it "should converte any valid integer passed"  do
+			results = @convert_coins.to_usd((0..12).to_a)
+			
+			results.include?(13).should be_true
+			results.include?(6).should be_true
+			results.include?(2).should be_true
+			results.include?(1).should be_true
+			results.include?(0).should be_true
 		end
 		
 		it "shoud validate correctly string to Integer convertions"  do
