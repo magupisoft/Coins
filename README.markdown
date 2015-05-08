@@ -1,5 +1,5 @@
-#COINS - Bytelandian gold coins
-Solution for Sphere online judge
+#### COINS - Bytelandian gold coins
+##### Solution for Sphere online judge
 
-Manuel Gutiérrez Pineda
-@magupisoft
+## Manuel Gutiérrez Pineda
+##@magupisoft
